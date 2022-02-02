@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BuildingCreateEditDialog.vue should match snapshot 1`] = `
+<div class="v-dialog__container"><button type="button" class="mb-2 px-8 v-btn v-btn--is-elevated v-btn--has-bg theme--dark v-size--default green" role="button" aria-haspopup="true" aria-expanded="false"><span class="v-btn__content">
+			Add building
+		</span></button>
+  <!---->
+</div>
+`;

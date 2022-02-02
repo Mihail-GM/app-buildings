@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TheLayoutWrap.vue should match snapshot 1`] = `
+<div>
+  <main class="v-main mt-5" style="padding: 0px 0px 0px 0px;">
+    <div class="v-main__wrap">
+      <div class="container"></div>
+    </div>
+  </main>
+  <nav class="v-navigation-drawer v-navigation-drawer--close v-navigation-drawer--fixed v-navigation-drawer--is-mobile theme--light" style="height: 100vh; top: 0px; transform: translateX(-100%); width: 256px;">
+    <div class="v-navigation-drawer__content">
+      <div class="v-list v-sheet theme--light">
+        <router-link tabindex="0" id="mobile-navigation-Home" class="v-list-item v-list-item--link theme--light">
+          <div class="v-list-item__action"><i aria-hidden="true" class="v-icon notranslate mdi mdi-home-circle theme--light"></i></div>
+          <div class="v-list-item__content">Home</div>
+        </router-link>
+        <router-link tabindex="0" id="mobile-navigation-Buildings" class="v-list-item v-list-item--link theme--light">
+          <div class="v-list-item__action"><i aria-hidden="true" class="v-icon notranslate mdi mdi-home-circle theme--light"></i></div>
+          <div class="v-list-item__content">Buildings</div>
+        </router-link>
+      </div>
+    </div>
+    <div class="v-navigation-drawer__border"></div>
+  </nav>
+  <header class="px-md-10 px-sm-0 px-xs-0 v-sheet theme--dark v-toolbar v-toolbar--bottom" style="width: 100%; height: 64px; position: fixed;">
+    <div class="v-toolbar__content" style="height: 64px;"><span class="hidden-md-and-up"><button type="button" class="v-app-bar__nav-icon v-btn v-btn--icon v-btn--round theme--dark v-size--default"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu theme--dark"></i></span></button></span> <button type="button" class="hidden-sm-and-down v-btn v-btn--text theme--dark v-size--x-large" id="navigation-home"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate v-icon--left mdi mdi-home-circle theme--dark"></i>
+			Home
+		</span></button><button type="button" class="hidden-sm-and-down v-btn v-btn--text theme--dark v-size--x-large" id="navigation-buildings"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate v-icon--left mdi mdi-home-circle theme--dark"></i>
+			Buildings
+		</span></button>
+      <div class="spacer"></div>
+      <div class="v-toolbar__title">
+        <h3 id="app-title-navigation" style="cursor: pointer;">
+          Buildings App
+        </h3>
+      </div>
+    </div>
+  </header>
+</div>
+`;

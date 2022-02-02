@@ -5,12 +5,18 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit --no-cache --silent --setupTestFrameworkScriptFile=./tests/setup.js",
+    "clear_jest": "jest --clearCache"
   },
   "dependencies": {
+    "axios": "^0.25.0",
     "core-js": "^3.6.5",
+    "flush-promises": "^1.0.2",
+    "loadash": "^1.0.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
+    "vuelidate": "^0.7.7",
+    "vuetify": "^2.4.0",
     "vuex": "^3.4.0"
   },
   "devDependencies": {
@@ -20,8 +26,55 @@
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/test-utils": "^1.0.3",
+    "jest-transform-stub": "^2.0.0",
     "node-sass": "^4.12.0",
-    "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.4.5",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.7.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js,vue}",
+      "!**/node_modules/**",
+      "!src/services/**"
+    ],
+    "coveragePathIgnorePatterns": [
+      "node_modules",
+      "models",
+      "services"
+    ],
+    "coverageReporters": [
+      "html",
+      "text-summary"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      ".*\\.(vue)$": "vue-jest",
+      ".+\\.(css|styl|less|sass|scss|png|webp|jpg|ttf|woff|woff2)$ ": "jest-transform-stub"
+    },
+    "setupFiles": [
+      "<rootDir>/tests/setup.js"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/setup.js"
+    ],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1",
+      "^vuetify/lib$": "vuetify",
+      "^.+\\.(css|styl|less|sass|scss|png|webp|jpg|ttf|woff|woff2)$": "jest-transform-stub"
+    },
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/node_modules/(?!(vuetify)/)"
+    ]
   }
 }
