@@ -1,5 +1,7 @@
 # app-buildings
 
+Live demo: https://app-building-v-0-1.web.app/buildings
+
 ## Project setup
 ```
 npm install
