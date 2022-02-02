@@ -1,5 +1,3 @@
-// test/buildings.spec.js
-
 import Vuex from "vuex";
 
 import {createLocalVue} from "@vue/test-utils";

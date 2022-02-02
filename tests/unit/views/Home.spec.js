@@ -1,5 +1,3 @@
-// test/Home.spec.js
-
 import Vuetify from 'vuetify'
 import Vuex from "vuex";
 
